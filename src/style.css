@@ -1,0 +1,125 @@
+* body {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Trebuchet MS", sans-serif;
+    background: linear-gradient(
+            to right bottom,
+            rgb(136, 167, 214),
+            50%,
+            rgb(48, 59, 83)
+        )
+        fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Yellowtail", serif;
+    font-size: 3.4em;
+}
+
+.container {
+    width: 500px;
+    border: 1px solid #eee;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 15px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+button.danger {
+    background: #db4928;
+    color: #fff;
+    font-weight: bold;
+}
+
+button.success {
+    background: rgb(97, 128, 175);
+    color: #fff;
+}
+
+input {
+    padding: 8px 15px;
+    outline: 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+form input {
+    flex: 1;
+    margin-right: 15px;
+}
+
+form button {
+    color: white;
+    font-size: x-large;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+li:hover {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 10px 0px 10px 5px;
+}
+
+li input {
+    flex: 1;
+}
+
+li p {
+    flex: 1;
+}
+
+li p.done {
+    text-decoration: line-through;
+}
+
+li .todo {
+    flex: 0 0 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-right: 15px;
+    border: 2px solid #333;
+}
+
+li .todo.done {
+    background: #333;
+}
